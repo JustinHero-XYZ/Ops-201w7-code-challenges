@@ -1,8 +1,8 @@
 #!/bin/bash
 
 # Script Name:                  Create Directories and Files
-# Author:                       Your Name
-# Date of latest revision:      00/00/0000
+# Author:                       Justin Patterson
+# Date of latest revision:      11/12/2023
 # Purpose:                      Create four directories and a .txt file in each directory
 
 # Declaration of variables
