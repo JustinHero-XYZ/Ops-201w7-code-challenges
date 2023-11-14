@@ -1,28 +1,18 @@
 #!/bin/bash
 
-# Script Name:                  Create Directories and Files
-# Author:                       Justin Patterson
-# Date of latest revision:      11/12/2023
-# Purpose:                      Create four directories and a .txt file in each directory
+# Script Name: Create Directories and Files
+# Author: Justin Patterson
+# Date of latest revision: 11/12/2023
+# Purpose: Create four directories and a .txt file in each directory
 
 # Declaration of variables
 directories=("dir1" "dir2" "dir3" "dir4")
 
-# Declaration of functions
-
 # Main
-echo "Creating directories..."
+echo "Creating directories and files..."
 for dir in "${directories[@]}"; do
-    mkdir "$dir"
-    echo "Directory $dir created."
-done
-
-echo "Putting directory names into an array..."
-
-# Reference the array variable to create a new .txt file in each directory
-for dir in "${directories[@]}"; do
-    touch "$dir/file.txt"
-    echo "File.txt created in $dir."
+    mkdir -p "$dir" && echo "Directory $dir created."
+    touch "$dir/file.txt" && echo "File.txt created in $dir."
 done
 
 # End
