@@ -2,7 +2,7 @@
 
 # Script Name: Process Manager
 # Author: Justin Patterson
-# Date of latest revision: 11/12/2023
+# Date of latest revision: 11/15/2023
 # Purpose: Display running processes, allow the user to kill a process by PID.
 
 while true; do
