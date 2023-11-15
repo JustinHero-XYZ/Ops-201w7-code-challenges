@@ -20,3 +20,4 @@ while true; do
         echo "Failed to kill process with PID $pid_to_kill. Please check the PID."
     fi
 done
+
