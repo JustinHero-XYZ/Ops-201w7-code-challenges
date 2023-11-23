@@ -1,8 +1,8 @@
 #!/bin/bash
 
 # Script Name:                  system_info.sh
-# Author:                       [Your Name]
-# Date of latest revision:      [00/00/0000]
+# Author:                       Justin Patterson
+# Date of latest revision:      11/23/2023
 # Purpose:                      Display system information using lshw and dmidecode
 
 # Declaration of variables
