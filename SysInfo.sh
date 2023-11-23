@@ -3,7 +3,7 @@
 # Script Name:                  system_info.sh
 # Author:                       Justin Patterson
 # Date of latest revision:      11/23/2023
-# Purpose:                      Display system information using lshw and dmidecode
+# Purpose:                      Display system information using lshw
 
 # Declaration of variables
 
@@ -15,19 +15,7 @@ display_component_info() {
     echo "------------------------"
     echo " $component_name Information"
     echo "------------------------"
-
-    case $component_name in
-        "computer" | "cpu" | "memory" | "display" | "network")
-            lshw -c $component_name | grep -E 'product|vendor|physical id|bus info|width|description|size|clock|capabilities|configuration|resources'
-            ;;
-        "bios")
-            dmidecode -t bios | grep -E 'Vendor|Version|Release Date'
-            ;;
-        *)
-            echo "Unsupported component: $component_name"
-            ;;
-    esac
-
+    lshw -c $component_name | grep -E 'product|vendor|physical id|bus info|width|description|size|clock|capabilities|configuration|resources' | sed 's/^\s*//'
     echo ""
 }
 
@@ -45,6 +33,5 @@ display_component_info "cpu"
 display_component_info "memory"
 display_component_info "display"
 display_component_info "network"
-display_component_info "bios"
 
 # End
