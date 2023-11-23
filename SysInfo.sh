@@ -33,5 +33,6 @@ display_component_info "cpu"
 display_component_info "memory"
 display_component_info "display"
 display_component_info "network"
+display_component_info "bios"
 
 # End
