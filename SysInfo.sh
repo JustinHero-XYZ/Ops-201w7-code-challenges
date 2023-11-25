@@ -2,7 +2,7 @@
 
 # Script Name:                  system_info.sh
 # Author:                       Justin Patterson
-# Date of latest revision:      11/24/2023
+# Date of latest revision:      11/23/2023
 # Purpose:                      Display system information using lshw
 
 # Declaration of variables
