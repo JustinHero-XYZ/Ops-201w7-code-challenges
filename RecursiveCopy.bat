@@ -1,3 +1,9 @@
+Justin Patterson
+11/28/2023
+Seattle-Ops-201w7
+Code Challenge 08
+
+
 @echo off
 set /p sourcePath="Enter the source folder path: "
 set /p destinationPath="Enter the destination folder path: "
