@@ -1,7 +1,7 @@
-Justin Patterson
-11/28/2023
-Seattle-Ops-201w7
-Code Challenge 08
+# Script: RecursiveCopy.bat
+# Author: Justin Patterson
+# Date: November 28, 2023
+# Description: Windows Batch File that automates the copy operations of a user’s files using ROBOCOPY.
 
 
 @echo off
