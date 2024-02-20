@@ -7,13 +7,13 @@
 
 # Declaration of variables
 
-"I am working perfectly!"
+echo "I am working perfectly!"
 
 # Declaration of functions
 
 
 # Main
-"hello world!"
+echo "hello world!"
 
 
 # End
